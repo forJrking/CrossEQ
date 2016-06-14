@@ -2,7 +2,7 @@
 
 ### 效果图
 ***
-![png](png\png1.png)
+![png1.png](png\png1.png)
 
 
 ### 二次开发注意事项
