@@ -2,7 +2,7 @@
 
 ### 效果图
 ***
-![png1.png](https://github.com/forJrking/CrossEQ/blob/master/png/png1.png)
+![png1.png](https://github.com/forJrking/CrossEQ/blob/master/11.gif)
 
 
 ### 二次开发注意事项
