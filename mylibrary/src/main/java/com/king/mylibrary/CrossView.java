@@ -89,7 +89,6 @@ public class CrossView extends View {
         paint.setStrokeJoin(Paint.Join.ROUND);//交界圆弧
         paint.setDither(true);
 //        paint.setStrokeCap(Paint.Cap.ROUND);//末尾圆角
-
         if (drawLine) {
             paint.setColor(Color.RED);
             paint.setStrokeWidth(15);//线宽
@@ -165,6 +164,7 @@ public class CrossView extends View {
                 }
                 break;
             case MotionEvent.ACTION_UP:
+            case MotionEvent.ACTION_CANCEL:
                 drawLine = true;
                 break;
         }
