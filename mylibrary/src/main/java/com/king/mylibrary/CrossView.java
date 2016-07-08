@@ -108,6 +108,25 @@ public class CrossView extends View {
         super.onLayout(changed, left, top, right, bottom);
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        setMeasuredDimension(measureSpec(widthMeasureSpec),measureSpec(heightMeasureSpec) );
+    }
+
+    private int measureSpec(int measureSpec) {
+        int result;
+        int specMode = MeasureSpec.getMode(measureSpec);
+        int specSize = MeasureSpec.getSize(measureSpec);
+        if(specMode == MeasureSpec.EXACTLY){
+            result = specSize;
+        }else {
+            result = 200;//默认显示200px
+            if(specMode == MeasureSpec.AT_MOST){
+                result = Math.min(result,specSize);
+            }
+        }
+        return result;
+    }
 
     public boolean onTouchEvent(MotionEvent event) {
 
