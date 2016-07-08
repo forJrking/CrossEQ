@@ -87,6 +87,7 @@ public class CrossView extends View {
         paint.setDither(true);
         paint.setStyle(Paint.Style.FILL);//填充绘制
         paint.setStrokeJoin(Paint.Join.ROUND);//交界圆弧
+        paint.setDither(true);
 //        paint.setStrokeCap(Paint.Cap.ROUND);//末尾圆角
 
         if (drawLine) {
@@ -97,8 +98,8 @@ public class CrossView extends View {
         canvas.drawLine(mLineA[0], mLineA[1], mLineA[2], mLineA[3], paint);
         canvas.drawLine(mLineB[0], mLineB[1], mLineB[2], mLineB[3], paint);
 
-        paint.setColor(Color.BLUE);
-        canvas.drawCircle(cp.x, cp.y, 25f, paint);//绘制点
+        paint.setColor(Color.parseColor("#3F51B5"));
+        canvas.drawCircle(cp.x, cp.y, 20f, paint);//绘制点
     }
 
     @Override
