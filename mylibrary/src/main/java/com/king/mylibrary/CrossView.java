@@ -52,6 +52,13 @@ public class CrossView extends View {
 
     }
 
+    public void init(int initX,int initY) {
+        setX(initX);
+        setY(initY);
+        postInvalidate();
+    }
+
+
     public void init(View parent) {//可做初始化中间使用
         init(parent, -1, -1);
     }

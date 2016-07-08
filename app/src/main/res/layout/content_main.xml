@@ -21,10 +21,41 @@
         android:background="#8000"
         >
         <!--<com.king.mylibrary.CrossView-->
-            <!--android:layout_gravity="center"-->
-            <!--android:id="@+id/cross"-->
-            <!--android:layout_width="300dp"-->
-            <!--android:layout_height="450dp"/>-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/cross"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="450dp"/>-->
 
     </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="up"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="down"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="left"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="right"/>
+    </LinearLayout>
+
 </RelativeLayout>
