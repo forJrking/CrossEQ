@@ -1,6 +1,6 @@
 # CrossEQ 均衡器（自定义控件）
 
-### 效果图（点赞，支持下开源）
+### 效果图（Star 支持开源）
 ***
 ![png1.png](https://github.com/forJrking/CrossEQ/blob/master/11.gif)
 
